@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiencia Interactiva</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body oncontextmenu="return false">
+  <div id="unsupported-browser">
+    <div>
+      <p>⚠️ Lo sentimos 😢</p>
+      <p>Tu navegador no es compatible con esta experiencia interactiva.</p>
+      <p>Por favor, usa uno de estos navegadores para verla correctamente:</p>
+      <ul style="list-style: none; padding: 0; margin-top: 10px;">
+        <li>🟢 Google Chrome</li>
+        <li>🟠 Mozilla Firefox</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="start-fallback">Toca para comenzar</div>
+
+  <img src="assets/png1.png" alt="Imagen 1" id="img1" class="continue-image" />
+  <img src="assets/png2.png" alt="Imagen 2" id="img2" class="continue-image" />
+  <img src="assets/png3.png" alt="Imagen 3" id="img3" class="continue-image" />
+
+  <div class="video-wrapper">
+    <video id="video0" autoplay playsinline muted preload="auto" controlsList="nodownload">
+      <source src="assets/video0.mp4" type="video/mp4" />
+    </video>
+    <video id="video1" playsinline muted preload="auto" controlsList="nodownload">
+      <source src="assets/video1.mp4" type="video/mp4" />
+    </video>
+    <video id="video2" playsinline muted preload="auto" controlsList="nodownload">
+      <source src="assets/video2.mp4" type="video/mp4" />
+    </video>
+    <video id="video3" playsinline muted preload="auto" controlsList="nodownload">
+      <source src="assets/video3.mp4" type="video/mp4" />
+    </video>
+    <video id="video4" playsinline muted preload="auto" controlsList="nodownload">
+      <source src="assets/video4.mp4" type="video/mp4" />
+    </video>
+    <video id="video5" playsinline muted loop preload="auto" controlsList="nodownload">
+      <source src="assets/video5.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <audio id="audio" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button class="continue-button" id="continue1">Continuar</button>
+  <button class="continue-button" id="continue2">Continuar</button>
+  <button class="continue-button" id="continue3">Continuar</button>
+
+  <div class="buttons-container" id="buttons-container">
+    <div class="button-wrapper">
+      <a href="https://maps.app.goo.gl/iLidSW6oDsJFU3Z18" target="_blank" class="inactive-link" tabindex="-1">
+        <img src="assets/salon.png" alt="Salón" class="button-img" />
+      </a>
+    </div>
+    <div class="button-wrapper">
+      <a href="https://api.whatsapp.com/send?phone=+59175200294&text=Hola%20quiero%20confirmar%20mi%20asistencia" target="_blank" class="inactive-link" tabindex="-1">
+        <img src="assets/botonasistencia.png" alt="asistencia" class="button-img" />
+      </a>
+    </div>
+    <div class="button-wrapper">
+      <img src="assets/repetir.png" alt="Repetir" class="button-img" id="repeat-button" />
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <p> © 2025 ARTS. Todos los derechos reservados. <a href="https://www.facebook.com/InvitacionesDeBodaElAlto" target="_blank" class="inactive-link" tabindex="-1">Visitanos</a></p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
